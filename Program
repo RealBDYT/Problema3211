@@ -1,0 +1,26 @@
+#include <iostream>
+#include <math.h>
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+   int s, c, n;
+
+   cin>>s;
+   cin>>c;
+   cin>>n;
+
+   if (s % n == 0 and s % c == 0) {
+    cout<<"CN"<<endl;
+   } else if (s % n == 0 and s % c != 0) {
+    cout<<"N"<<endl;
+   } else if (s % n != 0 and s % c == 0) {
+   cout<<"C"<<endl;
+   } else {
+    cout<<"nimic"<<endl;
+   }
+
+    return 0;
+}
